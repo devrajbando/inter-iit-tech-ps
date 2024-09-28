@@ -22,32 +22,103 @@ function App() {
         </div>
 
         {subPage === 1 && (
-          <div className='my-10'>
-            
-            <table className='mx-auto'>
-              <thead >
-                <tr>
-
-                <th className='px-36 text-xl '>Company</th>
-                <th className='text-xl'>Problem Statement</th>
-                </tr>
-              </thead>
+         <div className='my-10 flex justify-center'>
+         <table className='table-auto w-[80%] text-left border-collapse'>
+           <thead>
+             <tr className="bg-gray-200">
+               <th className='px-4 py-2 text-xl border-b border-gray-400'>Company</th>
+               <th className='px-4 py-2 text-xl border-b border-gray-400'>Prep</th>
+               <th className='px-4 py-2 text-xl border-b border-gray-400'>Summary</th>
+               <th className='px-4 py-2 text-xl border-b border-gray-400'>PDF</th>
+             </tr>
+           </thead>
               <tbody >
-                <tr><td>Jaguar Land Rover</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507304/HP_JLR_snous7.pdf" target='_blank'>Download PDF</a></td></tr>
-                <tr><td>Engineer's Conclave(G20)</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507104/EC_vpi1qu.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Student's Academic Conference</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507095/SAC_po5qzq.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Math Bowl</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507091/No_CMI_qrqufi.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>MPHASIS foundation</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Mphasis_grxq8t.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Solinas</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/LP_Solinas_ewk3g1.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Zelta Labs</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507091/MP_Zelta_ax5vmi.pdf" target='_blank'>Download PDF</a></td></tr>
-                <tr><td>Adobe</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Adobe_n32stc.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Aptos</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Aptos_l0q8fm.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Ministry of Panchayati Raj</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507089/LP_Min_oc9jgm.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>DevRev</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/HP_DevRev_abe30v.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>India Game Developer Conference</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507088/LP_IGDC_ft6uvq.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>WorldQuant Brain</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507088/HP_WQ_hckc33.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>Trumio</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/HP_High_Trumio_kn8vzm.pdf" target="_blank">Download PDF</a></td></tr>
-                <tr><td>CERTN</td><td><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/LP_CERT_wyseya.pdf" target="_blank">Download PDF</a></td></tr>
+            <tr>
+              <td className='px-4 py-2 align-top border-b border-gray-300'>Jaguar Land Rover</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>High</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>
+                  Propose a strategy to adopt chiplet technology in cars by analyzing where chiplets will add the most value and designing a micro-architecture for optimal throughput.
+                  <br />Domain: Automotive Semiconductors & System-on-Chip (SoC) Architecture
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>
+                  <a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507304/HP_JLR_snous7.pdf" target='_blank'>Download PDF</a>
+                </td>
+            </tr>
+            <tr>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>MPHASIS foundation</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Mid</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Identify optimal flight alternatives for passengers affected by schedule changes, ensuring rule compliance and ranking based on factors like time, ancillary services, and passenger priority.
+                  <br />Operations Research, Airline Industry
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Mphasis_grxq8t.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Solinas</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Low</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>A team needs to design a retractable and extendable shaft that can reach a depth of 5 meters for waste homogenization, while being lightweight, portable, and suitable for underwater use.
+                  <br />Domain: Mechanical Engineering, Product Design
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/LP_Solinas_ewk3g1.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Zelta Labs</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Mid</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Create and backtest algorithmic trading strategies for the BTC/USDT cryptocurrency market, focusing on maximizing returns while managing risk effectively.
+                  <br />Domain: Algorithmic Trading & Cryptocurrency
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507091/MP_Zelta_ax5vmi.pdf" target='_blank'>Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Adobe</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Mid</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>The task is to simulate user behavior and content to help marketers estimate social media engagement and create content that drives desired KPIs like likes, comments, and purchases. <br />
+                Domain: Marketing Analytics, AI Simulation</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Adobe_n32stc.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Aptos</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Mid</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>The task involves building decentralized apps on Aptos blockchain, with options like MetaMask Snap integration, decentralized futures trading, on-chain Wordle/Qwordle, or a decentralized radio protocol, using Aptos' unique features for scalability and user experience. <br />
+                Domain: Blockchain Development, Web3</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507090/MP_Aptos_l0q8fm.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Ministry of Panchayati Raj</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Low</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'> Create a SIMCITY/Farmville-style game where users plan village development using real GIS data and budgets, optimizing resource allocation for infrastructure like roads, sanitation, schools, and utilities while maintaining citizen morale through strategic placement of assets. <br />
+                Domain: Game Development, Urban Planning</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507089/LP_Min_oc9jgm.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>DevRev</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>High</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Create a solution where a language model selects and sequences tools to answer a domain-specific conversational query, including specifying tool arguments and executing tasks.
+                  <br />
+                  Domain: AI-Assisted Question Answering & Natural Language Processing.</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/HP_DevRev_abe30v.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>India Game Developer Conference</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Low</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Design a game that incorporates specific themes (e.g., breakable objects, puzzles) with a scoring mechanism and local leaderboard, and submit it with a brief presentation.
+                  <br />Domain: Game Design & Development​
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507088/LP_IGDC_ft6uvq.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>WorldQuant Brain</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>High</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Develop "alpha" models using historical market data to predict future financial instrument prices in a competition focused on quantitative research and analysis. <br />
+                Domain: Quantitative Finance & Algorithmic Trading</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507088/HP_WQ_hckc33.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Trumio</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>High</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Trumio seeks teams to ideate, develop, and plan go-to-market strategies for standalone mobile/web apps that drive alumni engagement, enhance student upskilling with AI tools, and ensure quality delivery of student projects to clients. <br />
+                Domain: Software Development, AI Integration</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/HP_High_Trumio_kn8vzm.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>CERTN</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>Low</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'>This involves designing tools to enhance cybersecurity audit quality, reducing application vulnerabilities, and developing features to detect and respond to cyber-attacks effectively.
+                  <br />Domain: Cybersecurity, Software Development
+                </td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507087/LP_CERT_wyseya.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Engineer's Conclave</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507104/EC_vpi1qu.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Student's Academic Conference</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507095/SAC_po5qzq.pdf" target="_blank">Download PDF</a></td></tr>
+                <tr><td className='px-4 py-2 align-top border-b border-gray-300'>Math Bowl</td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'></td>
+                <td className='px-4 py-2 align-top border-b border-gray-300'><a href="https://res.cloudinary.com/digwr518o/image/upload/v1727507091/No_CMI_qrqufi.pdf" target="_blank">Download PDF</a></td></tr>
               </tbody>
 
             </table>
@@ -85,3 +156,4 @@ function App() {
 }
 
 export default App
+
